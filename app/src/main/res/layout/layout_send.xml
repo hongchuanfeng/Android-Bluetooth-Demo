@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/fragment_common">
+
+    <EditText
+        android:id="@+id/input_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:hint="请输入短消息" />
+
+    <Button
+        android:id="@+id/btn_sendMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="sendMsg"
+        android:text="发送信息" />
+
+    <EditText
+        android:id="@+id/input_file"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:hint="请输入文件路径(例如:/sdcard/1.txt)" />
+
+    <Button
+        android:id="@+id/btn_sendFile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="sendFile"
+        android:visibility="gone"
+        android:text="发送文件" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_log"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="日志:"
+            android:textColor="@color/colorPrimary" />
+    </ScrollView>
+</merge>

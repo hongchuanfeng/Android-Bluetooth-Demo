@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/bleFragment">
+
+    <fragment
+        android:id="@+id/bleFragment"
+        android:name="com.inuker.bluetooth.BleFragment"
+        android:label="fragment_ble"
+        tools:layout="@layout/fragment_ble" />
+    <fragment
+        android:id="@+id/commonFragment"
+        android:name="com.inuker.bluetooth.CommonFragment"
+        android:label="fragment_common"
+        tools:layout="@layout/fragment_common" />
+</navigation>
